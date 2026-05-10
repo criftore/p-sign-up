@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url(lan-gao-KBuWjEVavM8-unsplash.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-left: 50px;
+}
+
+h2 {
+  color: white;
+}
+
+label,
+p,
+legend {
+  color: white;
+}
+
+form {
+  width: 380px;
+}
+
+legend {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  width: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+label {
+  display: block;
+  width: 200px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 30px;
+}
