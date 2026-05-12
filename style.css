@@ -6,9 +6,25 @@
   font-size: normal;
 }
 
+@font-face {
+  font-family: Norse;
+  src: url(transfonter.org-20260510-130315/Norse.woff2);
+  src: url(transfonter.org-20260510-130315/Norse.woff);
+  font-weight: normal;
+  font-size: normal;
+}
+
 * {
   box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
   margin: 0;
+}
+p {
+  margin: 3px;
 }
 
 body {
@@ -25,17 +41,36 @@ body {
 
 .container {
   display: flex;
-  gap: 100px;
+  gap: 0 100px;
   height: fit-content;
-  width: 100%;
+  width: stretch;
   border-radius: 20px 0 0 20px;
   background-color: rgba(255, 255, 255, 0.03);
 }
+
+img {
+  width: 200px;
+  height: 190px;
+}
+
+.title {
+  font: 1em "Borse";
+  text-align: center;
+  font-size: 45px;
+}
+
 .sign-form {
+  border: 1px solid white;
   height: fit-content;
   border-radius: 20px;
   padding: 17px 30px;
 }
+
+.title-hero {
+  padding: 0px 30px;
+  height: fit-content;
+}
+
 .form-container {
   width: auto;
   display: grid;
@@ -43,54 +78,39 @@ body {
   gap: 10px 50px;
 }
 
-legend,
-.submit {
+legend {
   text-align: center;
 }
 label {
   display: block;
   width: auto;
 }
-input,
-button {
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-  padding: 8px;
-}
 
-button {
-  font-weight: bolder;
-  padding: 5px 30px;
-  cursor: pointer;
+input {
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
 }
 .submit {
   margin-top: 20px;
+  text-align: center;
 }
 
 h2 {
   margin: 10px 0;
-}
-
-img {
-  width: 200px;
-  height: 200px;
-}
-.title {
-  font: 1em "Borse";
-  text-align: center;
-  font-size: 45px;
-}
-.title-hero {
-  padding: 10px 30px;
-  height: fit-content;
 }
 a {
   color: white;
   font-weight: bolder;
   text-decoration: none;
 }
-p {
-  margin: 5px;
+
+button {
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
