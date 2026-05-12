@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Borse;
+  src: url(transfonter.org-20260510-130315/Norse-Bold.woff2);
+  src: url(transfonter.org-20260510-130315/Norse-Bold.woff);
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: Norse;
+  src: url(transfonter.org-20260510-130315/Norse.woff2);
+  src: url(transfonter.org-20260510-130315/Norse.woff);
+  font-weight: normal;
+  font-size: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,6 +23,9 @@ html {
   height: 100%;
   margin: 0;
 }
+p {
+  margin: 3px;
+}
 
 body {
   background-image: url(lan-gao-KBuWjEVavM8-unsplash.jpg);
@@ -14,41 +33,84 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding-left: 50px;
-}
-
-h2 {
+  padding-left: 100px;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
-label,
-p,
-legend {
-  color: white;
+.container {
+  display: flex;
+  gap: 0 100px;
+  height: fit-content;
+  width: stretch;
+  border-radius: 20px 0 0 20px;
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
-form {
-  width: 380px;
+img {
+  width: 200px;
+  height: 190px;
 }
 
-legend {
+.title {
+  font: 1em "Borse";
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+.sign-form {
+  border: 1px solid white;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 17px 30px;
+}
+
+.title-hero {
+  padding: 0px 30px;
+  height: fit-content;
 }
 
 .form-container {
-  width: 450px;
+  width: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 10px 50px;
 }
 
+legend {
+  text-align: center;
+}
 label {
   display: block;
-  width: 200px;
+  width: auto;
 }
 
+input {
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
 .submit {
+  margin-top: 20px;
   text-align: center;
-  margin-top: 30px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+button {
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 5px 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
