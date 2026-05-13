@@ -30,6 +30,7 @@ body {
   width: 100%;
   border-radius: 20px 0 0 20px;
   background-color: rgba(255, 255, 255, 0.03);
+  box-shadow: 1px 1px 3px white;
 }
 .sign-form {
   height: fit-content;
@@ -67,6 +68,25 @@ button {
 }
 .submit {
   margin-top: 20px;
+}
+
+input:focus {
+  border: 1px solid navy;
+  box-shadow: 1px 1px 3px white;
+}
+
+#pwd:invalid,
+#cpwd:invalid {
+  border: 1px solid red;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px black inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 h2 {
